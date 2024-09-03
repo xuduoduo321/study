@@ -1,0 +1,98 @@
+/* 这个 CSS 文件放博客编辑的专属样式 */
+
+/* 博客编辑页的版心 */
+.blog-edit-container {
+    width: 1200px;
+    height: calc(100% - 50px);
+    margin: 0 auto;
+}
+
+    /* 标题编辑区 */
+    .blog-edit-container .title {
+        margin-top: 20px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .blog-edit-container .title #title {
+            font-size: 20px;
+            color: #000;
+            width: 1200px;
+            height: 50px;
+            border-radius: 10px;
+            padding-left: 20px;
+            border: none;
+            outline: none;
+            text-align:center;
+            background-color: rgba(41, 83, 149, 0.3);
+            font-size: 18px;
+        }
+            .blog-edit-container .title #title::placeholder {
+                color: #fff; /* 红色字体 */
+                font-size: 18px; /* 字体大小 */
+            }
+            .blog-edit-container .title #submit {
+                margin-left: 500px;
+                color: #fff;
+                width: 200px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: #00A2F9;
+                font-size: 20px;
+            }
+
+            .blog-edit-container .title #submit:active {
+                background-color: rgba(41, 83, 149, 0.3);
+            }
+
+#editor {
+    border-radius: 10px;
+    border: none;
+    opacity: 0.7;
+}
+
+#edit_title {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#article-categories {
+    margin-bottom: 20px;
+    /* 底部外边距，可根据需要调整 */
+}
+
+    #article-categories h5 {
+        margin-bottom: 10px;
+        /* 与选项之间的间距 */
+    }
+
+    #article-categories label {
+        display: inline-flex;
+        /* 使用inline-flex布局以确保在一行上显示 */
+        align-items: center;
+        /* 垂直居中 */
+        margin-right: 10px;
+        /* 每个选项之间的水平间距 */
+    }
+
+        #article-categories label:last-child {
+            margin-right: 0;
+            /* 移除最后一个选项的右边距 */
+        }
+
+        #article-categories label input[type="radio"] {
+            margin-right: 5px;
+            /* 单选按钮与右侧文本之间的间距 */
+        }
+
+
+#file {
+    float:right;
+    padding-left:10px;
+
+}

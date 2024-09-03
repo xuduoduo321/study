@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Article_Management_SystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminRegistrationCodes">
+    <Key>
+      <PropertyRef Name="index" />
+    </Key>
+    <Property Name="index" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="password" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Article_Management_SystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminRegistrationCodes" EntityType="Self.AdminRegistrationCodes" />
+    <EntitySet Name="Comments" EntityType="Article_Management_SystemModel.Comments" />
+    <EntitySet Name="Users" EntityType="Article_Management_SystemModel.Users" />
+    <AssociationSet Name="FK_Comments_Users" Association="Article_Management_SystemModel.FK_Comments_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <EntitySet Name="Articles" EntityType="Article_Management_SystemModel.Articles" />
+    <AssociationSet Name="FK_Articles_Users" Association="Article_Management_SystemModel.FK_Articles_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Articles" Association="Article_Management_SystemModel.FK_Comments_Articles">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="CommentId" />
+    </Key>
+    <Property Name="CommentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CommentText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CommentTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Users" Relationship="Article_Management_SystemModel.FK_Comments_Users" FromRole="Comments" ToRole="Users" />
+    <NavigationProperty Name="Articles" Relationship="Article_Management_SystemModel.FK_Comments_Articles" FromRole="Comments" ToRole="Articles" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Comments" Relationship="Article_Management_SystemModel.FK_Comments_Users" FromRole="Users" ToRole="Comments" />
+    <NavigationProperty Name="Articles" Relationship="Article_Management_SystemModel.FK_Articles_Users" FromRole="Users" ToRole="Articles" />
+  </EntityType>
+  <Association Name="FK_Comments_Users">
+    <End Type="Article_Management_SystemModel.Users" Role="Users" Multiplicity="1" />
+    <End Type="Article_Management_SystemModel.Comments" Role="Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="ArticleId" />
+    </Key>
+    <Property Name="ArticleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Author" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ContentMarkdownText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContentText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PublishTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ReadCount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Article_Management_SystemModel.FK_Articles_Users" FromRole="Articles" ToRole="Users" />
+    <NavigationProperty Name="Comments" Relationship="Article_Management_SystemModel.FK_Comments_Articles" FromRole="Articles" ToRole="Comments" />
+    <Property Name="FilePaths" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CoverPhotoUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Articles_Users">
+    <End Type="Article_Management_SystemModel.Users" Role="Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Article_Management_SystemModel.Articles" Role="Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Articles">
+    <End Type="Article_Management_SystemModel.Articles" Role="Articles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Article_Management_SystemModel.Comments" Role="Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="ArticleId" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

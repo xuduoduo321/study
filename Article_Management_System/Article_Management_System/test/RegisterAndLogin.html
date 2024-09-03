@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录注册系统</title>
+    <link rel="stylesheet" href="static/css/RegisterAndLogin.css">
+    <script src="static/js/jquery.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="dowebok" id="dowebok">
+        <div class="form-container sign-up-container">
+            <form id="Adduser_form">
+                <h1>注册</h1>
+                <span>请输入您的信息</span>
+                <input type="tel" id="UserTel" name="UserTel" placeholder="手机号:" required
+                       onblur="validateI_UserTel_Re(this.value)"><span id="test_phone" class="validation-result"></span>
+                <input type="text" id="Username" name="username" placeholder="用户名:(最少2字符)" required
+                       onblur="validateI_UserName_Re(this.value)"><span id="test_username" class="validation-result"></span>
+                <input type="password" id="Password" name="password" placeholder="密码:(至少8个字符，包含至少1个字母)"
+                       onblur="validateI_UserPassword_Re(this.value)"><span id="test_password" required
+                                                                         class="validation-result"></span>
+                <input type="password" id="Password2" name="password2" placeholder="确认密码:" required
+                       onblur="validateI_pas2_Re(this.value)"><span id="test_password2" class="validation-result"></span>
+                <div id="radioDiv">
+                    <label>
+                        <input type="radio" name="value" value="user" required>
+                    </label>
+                    <label for="">接受<a href="usertip.html" >  用户协议</a></label>
+                </div>
+                <button style="margin-top: 10px;" id="addUser">注册</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="house/mainHouse">
+                <h1>登录</h1>
+
+                <span>或使用您的帐号</span>
+                <input id="L_tel" type="tel" placeholder="手机号" onblur="validateI_UserTel_Lo(this.value)" required><span id="Tip_Login_Tel"></span>
+                <input id="L_pws" type="password" placeholder="密码" onblur="validateI_UserPassword_Lo(this.value)" required><span id="Tip_Login_Psw"></span>
+                <div id="LoginradioDiv">
+                    <label>
+                        <input type="radio" name="value" value="yes" required>
+                    </label>
+                    <label for="">接受 <a href="usertip.html" target="_blank">用户协议</a></label>
+
+                </div>
+                <button id="Login_tb1">登录</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>已有帐号？</h1>
+                    <p>请使用您的帐号进行登录</p>
+                    <button class="ghost" id="signIn">登录</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>没有帐号？</h1>
+                    <p>立即注册加入我们，和我们一起开始旅程吧</p>
+                    <button class="ghost" id="signUp">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/Register.js"></script>
+    <script src="static/js/Login.js"></script>
+
+
+
+</body>
+
+</html>

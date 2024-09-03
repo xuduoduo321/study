@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\static\\js\\article_list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\article_list.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|d:\\\u7F51\u9875\u8BBE\u8BA1\\article_management_system\\article_management_system\\test\\static\\js\\edit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\edit.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|d:\\\u7F51\u9875\u8BBE\u8BA1\\article_management_system\\article_management_system\\edit_article.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\edit_article.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|d:\\\u7F51\u9875\u8BBE\u8BA1\\article_management_system\\article_management_system\\test\\static\\js\\index2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\index2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|d:\\\u7F51\u9875\u8BBE\u8BA1\\article_management_system\\article_management_system\\search_article.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\search_article.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\static\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\index1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\index1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\article.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\article.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\static\\js\\index1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\index1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\article_management_system\\test\\static\\js\\article.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A63211BA-9A27-4F55-B87E-13B21B83B485}|Article_Management_System\\Article_Management_System.csproj|solutionrelative:article_management_system\\test\\static\\js\\article.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index2.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index2.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\index2.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index2.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\index2.js",
+              "ViewState": "AQIAANQAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-04T08:15:00.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit_Article.aspx.cs",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Edit_Article.aspx.cs",
+              "RelativeDocumentMoniker": "Article_Management_System\\Edit_Article.aspx.cs",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Edit_Article.aspx.cs",
+              "RelativeToolTip": "Article_Management_System\\Edit_Article.aspx.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T08:10:30.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "edit.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\edit.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\edit.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\edit.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\edit.js",
+              "ViewState": "AQIAABMBAAAAAAAAAAAAACIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-04T08:07:03.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Article_Management_System\\Login.aspx.cs",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Login.aspx.cs",
+              "RelativeToolTip": "Article_Management_System\\Login.aspx.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAIwEcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:18:32.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\index.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-03T14:13:46.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Article_list.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\Article_list.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\Article_list.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\Article_list.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\Article_list.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-03T14:12:17.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Article.html",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\Article.html",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\Article.html",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\Article.html",
+              "RelativeToolTip": "Article_Management_System\\test\\Article.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-03T13:43:36.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index1.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index1.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\index1.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\index1.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\index1.js",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswFcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-03T13:29:08.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "index1.html",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\index1.html",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\index1.html",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\index1.html",
+              "RelativeToolTip": "Article_Management_System\\test\\index1.html",
+              "ViewState": "AQIAAEsAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-03T13:28:47.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Search_Article.aspx.cs",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Search_Article.aspx.cs",
+              "RelativeDocumentMoniker": "Article_Management_System\\Search_Article.aspx.cs",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\Search_Article.aspx.cs",
+              "RelativeToolTip": "Article_Management_System\\Search_Article.aspx.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAtwDoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T13:18:56.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Article.js",
+              "DocumentMoniker": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\Article.js",
+              "RelativeDocumentMoniker": "Article_Management_System\\test\\static\\js\\Article.js",
+              "ToolTip": "D:\\\u7F51\u9875\u8BBE\u8BA1\\Article_Management_System\\Article_Management_System\\test\\static\\js\\Article.js",
+              "RelativeToolTip": "Article_Management_System\\test\\static\\js\\Article.js",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAswA4BAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-03T13:04:48.778Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

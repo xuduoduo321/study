@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="文章管理系统">
+    <title>文章管理系统首页</title>
+    <meta name="keywords" content="文章管理系统">
+    <meta name="description" content="">
+    <!--引入Font Awesome字体库样式表-->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <!--引入guojian.min.css组件样式表-->
+    <link rel="stylesheet" href="static/css/index.min.css">
+    <!--引入style.css自定义样式表-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!--引入jquery.min.js组件脚本-->
+    <script src="static/js/jquery.js" type="text/javascript"></script>
+    <style type="text/css">
+        body {
+            background-image: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--GJ-UI组件模块html代码开始-->
+    <nav class="gj-nav1 gcl-yh" style="background-color: #06A1FC;">
+        <!--响应式导航栏-->
+        <div class="gnav gclear">
+            <div class="gj-logo gj-left">
+                <a href="" title="文章管理系统"
+                    style="color:#fff;font-size:30px;letter-spacing: 2px;margin: 4px 0;">文章管理系统</a>
+            </div>
+            <i class="gbar fa fa-bars" aria-hidden="true"></i>
+            <ul class="gnav-ul gj-right">
+                <li class="">
+                    <a href=""><i class="fa fa-home" aria-hidden="true"></i> 首页</a>
+                </li>
+                <li>
+                    <a href="index1.html" id="">所有文章</a>
+                </li>
+                <li>
+                    <a href="index2.html"  id="My_art">我的文章</a>
+                </li>
+                <li>
+                    <a href="edit.html">写文章</a>
+                </li>
+                <li>
+                    <a href="RegisterAndLogin.html" target="_blank" id="loginLink">登录</a>
+                </li>
+                <li id="LoginOut" style="display:none;">
+                    <a href="#" id="loginout">退出登录</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="gcont">
+        <div class="row">
+            <div class="gj-lg-8">
+                <div class="gj-slide1 gcl-hb">
+                    <!--响应式轮播图-->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="Article_list.html?keyword=科技&page=category"><img src="static/picture/new.png"
+                                        alt="科技">
+                                    <p>科技</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="Article_list.html?keyword=新闻&page=category"><img src="static/picture/jpp7ng1p.png"
+                                        alt="新闻">
+                                    <p>新闻</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!--分页器-->
+                        <div class="swiper-button-prev">
+                            <!--导航小按钮-->
+                            <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <!--导航小按钮-->
+                            <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gj-wk gcl-hb">
+                    <!--媒体列表-->
+                    <div class="gj-bt">
+                        <h3><i class="fa fa-list-ul" aria-hidden="true"></i> 最新发布</h3>
+                    </div>
+                    <div class="gj-body gul-tuw1" id="article-container1">
+
+                    </div>
+                    <!--gul-tuw1-结束-->
+
+                    <!--nav-结束-->
+                </div>
+
+                <div class="gj-wk gcl-hb hidd">
+                    <!--媒体列表-->
+
+                    <!--gj-body-结束-->
+                </div>
+            </div>
+            <div class="gj-lg-4">
+                <div class="gj-wk gcl-hb">
+                    <!--搜索模块-->
+                    <div class="gj-bt">
+                        <h3><i class="fa fa-search" aria-hidden="true"></i> 站内搜索</h3>
+                    </div>
+                    <div class="gj-body gj-ss1">
+                        <form>
+                            <input id="searchInput" type="text" name="" placeholder="请输入搜索关键词···" minlength="2" required >
+                            <button id="searchbtn" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- 首页登录框架 -->
+                <div class="gj-wk gcl-hb hidd-sm hidd-md">
+                    <div class="gj-bt">
+                        <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i> 文章分类</h3>
+                    </div>
+                    <div class="user-info" style="display: none;">
+                        <p>欢迎您，<span id="username"></span>！</p>
+                    </div>
+
+                    <!--文章分类-->
+                    <div class="gj-body gj-user">
+                        <div class="gj-body gj-link1" id="Article_classification">
+                            <ul id="article-list" >
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="gj-wk gcl-hb hidd-sm hidd-md">
+                    <!--标签模块-->
+                    <div class="gj-bt">
+                        <h3><i class="fa fa-calendar" aria-hidden="true"></i> 文章归档</h3>
+                    </div>
+                    <div class="gj-body gj-link1">
+                        <ul id="Time_list" style="font-size:10px">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="gj-wk gcl-hb" id="right_con">
+                    <!--侧栏-图文列表-->
+                    <div class="gj-bt">
+                        <h3><i class="fa fa-thumbs-up" aria-hidden="true"></i> 博主推荐</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidd-xs gcl-yh" style="border: 0">
+        <!--返回顶部-->
+        <a class="gj-top" style="z-index: 1030; color: #fff; background-color: #fff; border: 0px;"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+
+    <footer class="gcl-yh"  style="border:0">
+        <!--footer底部-->
+        <div class="gj-footer">
+            <p>文章管理系统 | Powered by <a href="javascript:;" target="_blank">许多多</a></p>
+            <p>web期末作业</p>
+        </div>
+    </footer>
+    <!--GJ-UI组件模块html代码结束-->
+
+
+
+    <!--引入index.min.js组件脚本-->
+    <script src="static/js/comment.js" type="text/javascript"></script>
+    <script src="static/js/index.min.js" type="text/javascript"></script>
+    <!--引入index.min.js组件脚本-->
+    <script src="static/js/index.js" type="text/javascript"></script>
+
+    <!--GJ-UI组件模块js代码开始-->
+    <script>
+        /*GJ-UI响应式导航栏*/
+        $(document).ready(function () {
+            $(".gbar").click(function () {
+                $(".gnav-ul").slideToggle("slow");
+                return false
+            })
+        });
+    </script>
+    <script>
+        //轮播图
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, //循环切换
+            autoplay: true, //自动切换
+
+            autoplay: {
+                disableOnInteraction: false,
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    </script>
+    <!--GJ-UI组件模块js代码结束-->
+</body>
+
+</html>

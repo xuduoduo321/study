@@ -1,0 +1,16 @@
+﻿#Article_operation {
+    color:#999;
+}
+
+    #Article_operation i {
+        font-style: normal;
+        height:16px;
+        line-height: 16px;
+    }
+
+    #Article_operation i img {
+        opacity:.3;
+        width: 12px;
+        height:12px;
+
+    }

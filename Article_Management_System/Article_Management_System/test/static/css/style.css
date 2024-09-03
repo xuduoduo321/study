@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {background-image: url(../image/1c9a1e786b7ac2c5.jpg);}
+.gcont {background-color: #fff;-webkit-box-shadow: 0 0 20px #666;box-shadow: 0 0 20px #666;}
+.gj-head {background-image: url(../image/rz_head2.jpg) !important;}
+
+/*GJ-UI前端组件列表页*/
+#nav {text-align: center;margin-bottom: 7px;padding: 0;overflow: hidden;}
+#nav img {width: 100%;display: block;border: 1px solid #eee;}
+#nav p {border: 1px solid #222;padding: 8px 5px;background-color: #222;color: #fff;font-size: 1.5rem;font-weight: bold;margin: 0 auto;text-align: left;}
+#nav a {border: 1px solid #eee;padding: 6px 0 6px 20px;background-color: #f5f5f5;color: #333;text-align: left;margin: 0 auto;}
+#nav a:hover,#nav .current a {background-color: #666;color: #fff;}
+.gjui-navb {position: fixed;top: 5px;z-index: 888;}
+
+.gj-ui .gj-bt h3 {color:#333;border-bottom:1px solid #ddd;border-left:6px solid #999;padding:5px 0 5px 14px;font-weight:bold;background-color:#f7f7f7;}
+.gj-ui .ui-body p {font-size: 1.4rem;padding: 5px 0;margin: 0 auto;line-height: 160%;text-align: justify;color: #2a2a2a;}
+.gj-ui .ui-body p>img {max-width: 100%;height: auto;display: block;padding: 3px;}
+
+#div1 .ui-anli {overflow: hidden;}
+#div1 .ui-body img {border: 1px solid #ddd;margin: 0 auto;background-color: #fff;}
+#div1 .ui-anli h4 {font-size: 1.6rem;margin: 20px 0 10px;}
+#div1 .ui-anli h4>i {font-size: 1.8rem;}
+#div1 .ui-anli ul li {float: left;-webkit-box-shadow: 0 0 5px #f5f5f5;box-shadow: 0 0 5px #ddd;margin: 10px;padding: 3px;background-color: #f5f5f5;width: 150px;text-align: center;transition: all .3s;}
+#div1 .ui-anli ul li img {max-width: 100%;}
+#div1 .ui-anli ul li:hover {box-shadow: 3px 3px 10px #666;}
+
+#div2 a.down {border: 1px solid #333;color: #fff;padding: 5px 10px;background-color: #666;margin: 10px 0 20px;}
+#div2 a.down:hover {background-color: #000;}
+
+#div2,#div3,#div4,#div5,#div6,#div7 {height: 600px;}
+
+/*用户注册页面*/
+.gj-dlzc {width: 80%;background-color: #fff;padding: 30px 20px 20px;margin: 10% auto;-webkit-box-shadow: 0 0 20px #ddd;box-shadow: 0 0 20px #ddd;position: relative;}
+.gj-dlzc h5 {font-size: 1.6rem;color: #666;font-weight: 300;display: block;margin-top: -10px;}
+.gj-dlzc h3 img {display: block;margin: 0 auto;position: absolute;left: 50%;margin-left: -80px;top: -25px;background-color: #f5f5f5;-webkit-box-shadow: 0 0 20px #ddd;box-shadow: 0 0 20px #ddd;}
+.gj-dlzc form {width: 100%;margin: 0 auto;padding: 0 0px;}
+.gj-dlzc form input {border-bottom: 1px solid #ddd;padding: 8px;border-top: 0;border-left: 0;border-right: 0;display: block;margin: 10px auto;width: 100%;height: 32px;font-size: 1.4rem;color: #222;}
+.gj-dlzc form .gjdl-zc {text-align: center;}
+.gj-dlzc form .gjdl-zc img {height: 35px;}
+.gj-dlzc form .gjdl-zc button {border: 1px solid #ddd;padding: 6px 10px;background-color: #f5f5f5;font-size: 1.4rem;color: #666;cursor: pointer;margin: 10px 5px 0;}
+.gj-dlzc form .gjdl-zc button:hover {background-color: #ddd;color: #222;border-color: #999;}
+.gj-dlzc .gjdl-sx {text-align: center;margin: 10px auto 20px;font-size: 1.2rem;border-top: 1px dashed #ddd;padding-top: 10px;}
+.gj-dlzc .gjdl-sx a {margin: 0 5px;font-size: 1.2rem;color: #666;}
+.gj-dlzc .gjdl-sx a:hover {color: #222;}
+.gj-dlzc a.fan {background-color: #f5f5f5;padding: 3px 10px;float: left;font-size: 1.2rem;}
+.gj-dlzc a.fan:hover {background-color: #ddd;}
+.gj-dlzc p {text-align: right;color: #999;font-size: 1.2rem;}
+.gj-dlzc .gjdl-zc input {width: 20%;display: inline-block;margin: 0 5px;}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .gj-ui .ui-body p {font-size: 1.6rem;line-height: 190%;padding: 10px 0;}
+    #div1 .ui-anli ul li img {width: 200px;}
+	.gj-head {background-image: url(../images/rz_head1.jpg) !important;}
+	.gj-dlzc {width: 500px;}
+    .gj-dlzc form {padding: 0 80px;}
+    .gj-dlzc .gjdl-sx {font-size: 1.4rem;}
+    .gj-dlzc form .gjdl-zc button {margin: 10px 20px 0;}
+    .gj-dlzc .gjdl-sx a {margin: 0 10px;font-size: 1.4rem;}
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    .gjui-navb {width: 140px;}
+    .gjui-nav p {width: 100%;font-size: 1.6rem;}
+    .gjui-nav img {width: 100%;}
+    .gjui-nav a {width: 100%;}
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .gjui-navb {width: 170px;}
+}

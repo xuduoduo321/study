@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d101a569b9554cb4aba244ab29066fd2" Name="Diagram1">
+        <EntityTypeShape EntityType="Article_Management_SystemModel.AdminRegistrationCodes" Width="1.5" PointX="1.125" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Article_Management_SystemModel.Comments" Width="1.5" PointX="7.875" PointY="1.25" />
+        <EntityTypeShape EntityType="Article_Management_SystemModel.Users" Width="1.5" PointX="3.375" PointY="1.375" />
+        <AssociationConnector Association="Article_Management_SystemModel.FK_Comments_Users" />
+        <EntityTypeShape EntityType="Article_Management_SystemModel.Articles" Width="1.5" PointX="5.625" PointY="0.875" />
+        <AssociationConnector Association="Article_Management_SystemModel.FK_Articles_Users" />
+        <AssociationConnector Association="Article_Management_SystemModel.FK_Comments_Articles" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

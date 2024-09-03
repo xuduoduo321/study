@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章管理系统</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/edit.css">
+    <link rel="stylesheet" href="static/css/index.min.css">
+    
+    <!-- 引入依赖 -->
+    <link rel="stylesheet" href="editor.md-master/css/editormd.min.css">
+    <script src="static/js/jquery.js"></script>
+    <script src="editor.md-master/lib/marked.min.js"></script>
+    <script src="editor.md-master/lib/prettify.min.js"></script>
+    <script src="editor.md-master/editormd.js"></script>
+
+</head>
+<body>
+    <!-- 导航栏 -->
+    <!--GJ-UI组件模块html代码开始-->
+    <nav class="gj-nav1 gcl-yh" style="background-color: #06A1FC;">
+        <!--响应式导航栏-->
+        <div class="gnav gclear">
+            <div class="gj-logo gj-left">
+                <a href="index.html" title="文章管理系统"
+                   style="color:#fff;font-size:30px;letter-spacing: 2px;margin: 4px 0;">文章管理系统</a>
+            </div>
+            <i class="gbar fa fa-bars" aria-hidden="true"></i>
+            <ul class="gnav-ul gj-right">
+                <li class="">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> 首页</a>
+                </li>
+                <li>
+                    <a href="index1.html" id="">所有文章</a>
+                </li>
+                <li>
+                    <a href="index2.html" id="My_art">我的文章</a>
+                </li>
+                <li>
+                    <a href="edit.html" id="Edit">写文章</a>
+                </li>
+                <li>
+                    <a href="RegisterAndLogin.html" target="_blank" id="loginLink">登录</a>
+                </li>
+                <li id="LoginOut" style="display:none;">
+                    <a href="#" id="loginout">退出登录</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 版心 -->
+    <div class="blog-edit-container">
+        <!-- 标题编辑区 -->
+        <div class="title">
+            <input type="text" placeholder="在这里写下文章标题" id="title" maxlength="30">
+        </div>
+        <!-- 内容编辑区 -->
+        <div id="editor">
+            <textarea style="display:none;" name="markdown-content" id="markdown_con"># 在这写下一篇文章</textarea>
+            <textarea id="my-editormd-html" name="html-content" style="display:none;"></textarea>
+        </div>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div id="file">
+                <h5>上传附件</h5>
+                <input type="file" name="attachment-file" id="attachmentFile"  multiple>
+            </div>
+            <div id="article-categories">
+                <h5>文章类别:</h5>
+                <label>
+                    <input type="radio" name="category" value="新闻">
+                    新闻
+                </label>
+                <label>
+                    <input type="radio" name="category" value="体育">
+                    体育
+                </label>
+                <label>
+                    <input type="radio" name="category" value="生活">
+                    生活
+                </label>
+                <label>
+                    <input type="radio" name="category" value="科技">
+                    科技
+                </label>
+                <label>
+                    <input type="radio" name="category" value="军事">
+                    军事
+                </label>
+                <label>
+                    <input type="radio" name="category" value="时尚">
+                    时尚
+                </label>
+            </div>
+            <div class="title">
+                <input type="submit" id="submit" name="name" value="发布文章" />
+            </div>
+        </form>
+
+
+
+    </div>
+    <div id="output" style="display:none"></div>
+    <script type="text/javascript" src="static/js/Md_Markdown.js"></script>
+    <script type="text/javascript" src="static/js/comment.js"></script>
+    <script type="text/javascript" src="static/js/edit.js"></script>
+    <script>
+        // 初始化 editor.md
+        var editor = editormd("editor", {
+            // 这里的尺寸必须在这里设置，设置样式会被 editormd 自动覆盖
+            width: "100%",
+            // 设定编辑高度
+            height: "500px",
+            // 编辑页中的初始化内容
+           // markdown: "# 在这里写下一篇文章",
+            //指定 editor.md 依赖的插件路径
+            path: "editor.md-master/lib/",
+            saveHTMLToTextarea: true,// 将生成的 HTML 内容保存到指定的 textarea
+
+
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "/UploadImage.ashx",
+
+            onload: function () {
+                initPasteDragImg(this);
+            }
+
+            
+
+
+        });
+
+
+
+
+    </script>
+</body>
+</html>
